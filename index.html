@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación del clima</title>
+    <link rel="stylesheet" href="style.css">
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxlO8ILdL4GvaE8wreaAke_-k3Al4V-IM&libraries=places&callback=initMap"
+        async defer></script>
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>WEATHER APP</h1>
+        <input id="location-input" type="text" placeholder="Ingrese a la ubicación">
+        <div id="map"></div>
+        <h2>Clima actual</h2>
+        <div id="weather-info">
+            <p id="wind">Viento: -- km/h </p>
+            <p id="temperature">Temperatura: -- °C</p>
+            <p id="precipitation">Precipitacion: -- mm</p>
+        </div>
+        <div>
+            <img id="weather-img">
+        </div>
+
+    </div>
+
+</body>
+
+</html>
